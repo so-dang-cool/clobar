@@ -1,22 +1,38 @@
 # clobar
 
-A Clojure library designed to ... well, that part is up to you.
+Get a Clojure repl in your JVM project.
 
 ## Usage
 
-FIXME
+Depend on `so.dang.cool:clobar` from Maven Central or Clojars.
 
-## License
+```java
+import so.dang.cool.clobar.Clobar;
+```
 
-Copyright © 2023 FIXME
+```java
+// In some scope...
+Clobar.pry(interestingVariable);
+```
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
+## FAQ
 
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+> Why not use a debugger?
+
+Yes, use a debugger, this is not a debugger replacement. Sometimes it's more
+productive to get an instance of something to directly manipulate, inspect,
+call methods, etc.
+
+## TODO
+
+The experience is not polished. I have a number of open questions:
+
+1. Can we get better handling for Java objects?
+2. Can we load the full runtime context? (Example: Load all imports and
+   variables in scope.)
+3. Can we do this with other JVM shells? Especially `jshell`, but also the
+   Kotlin/Scala/Groovy equivalents.
+
+## Credits
+
+A 2023 side quest of J.R. Hill

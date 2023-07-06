@@ -1,3 +1,5 @@
+[![Maven Central](https://img.shields.io/maven-central/v/so.dang.cool/clobar.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22so.dang.cool%22%20AND%20a:%22clobar%22)
+
 # clobar
 
 Get a Clojure repl in your JVM project.

@@ -1,13 +1,13 @@
 (defproject so.dang.cool/clobar "1.0.1"
   :description "A crowbar that lets you pry open your code with Clojure."
-  :url "https://github.com/hiljusti/clobar"
+  :url "https://github.com/booniepepper/clobar"
   :license {:name "BSD-3-Clause"
             :url "https://opensource.org/licenses/BSD-3-Clause"}
-  :scm {:name "git" :url "https://github.com/hiljusti/clobar"}
+  :scm {:name "git" :url "https://github.com/booniepepper/clobar"}
   :pom-addition ([:developers
                   [:developer
-                   [:id "hiljusti"]
-                   [:name "J.R. Hill"]
+                   [:id "booniepepper"]
+                   [:name "Justin Hill"]
                    [:url "https://so.dang.cool"]]])
   :dependencies [[org.clojure/clojure "1.11.1"]]
   :repl-options {:init-ns clobar.core}
